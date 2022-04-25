@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Inter:wght@400;500;600&display=swap');
+
+:root {
+    --bg1: #151828;
+    --bg2: #1B1F34;
+    --body: #959DCC;
+    --brand: #FFAB76;
+    --white: #fff;
+}
+body{
+	font-family: 'Inter','Segoe UI',Tahoma,Geneva,Verdana,sans-serif;
+	color:var(--body);
+	line-height:1.8;
+	background-color:var(--bg1);
+}
+section{
+	padding-top:160px;
+	padding-bottom:160px;
+}
+h1,h2,h3,h4,h5,h6{
+	
+	font-family:"Dela Gothic One","Segoe Ui",Tahoma,Geneva,Verdana,sans-serif;
+	color:white;
+}
+img{
+	width:100%;
+}
+.intro{
+	margin-bottom:60px;
+	text-align:center;
+}
+.intro h1{
+	margin-top:16px;
+	margin-bottom:16px;
+}
+.intro h6{
+	color:var(--brand);
+}
+.intro p{
+	max-width:450px;
+	margin:auto;
+}
+a{
+	color:var(--body);
+	text-decoration:none;
+	transition:all 0.4s ease;
+}
+a:hover{
+	color:var(--brand);
+}
+.link-more{
+	display:inline-flex !important;
+	align-items:center;
+	font-size:13px;
+	font-weight:600;
+	text-transform:uppercase;
+	left:1px;
+}
+.link-more .icon{
+	transition:all 0.4s ease;
+}
+.link-more:hover .icon{
+	transform:translateX(8px);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+a.btn.btn-outline-brand {
+    background-color: transparent;
+    color: var(--brand);
+    border-color: var(--brand);
+}
+a.btn.btn-outline-brand:hover{
+	background-color:var(--brand);
+	color:#000;
+}
+a.navbar-brand {
+    font-size: 32px;
+    font-family: "Dela Gothic One","Segoe Ui",Tahoma,Geneva,Verdana,sans-serif;
+}
+a.navbar-brand span {
+    color: var(--brand);
+}
+.navbar{
+	background:linear-gradient(#1B1F34,rgba(27,31,52,0.2));
+	
+}
+.navbar .navbar-nav .nav-link.active{
+	color:var(--brand);
+}
+
+
+/*----HERO----*/
+
+section#hero{
+	background: linear-gradient(to right,#1B1F34,rgba(27,31,52,0.0)),url(../img/cover_1.jpg);
+	min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+#hero p{
+	margin-top:24px;
+	margin-bottom:24px;
+	
+}
+
+
+.btn{
+	padding:10px 20px !important;
+	font-family:"Dela Gothic One","Segoe Ui",Tahoma,Geneva,Verdana,sans-serif;
+	transition:all 0.4s ease;
+	border-radius:0;
+}
+.btn-brand{
+	background-color:var(--brand) !important;
+}
+.btn-brand:hover{
+	background-color:transparent !important;
+	color:var(--brand) !important;
+	border-color:var(--brand) !important;
+}
+
+
+/*--About--*/
+#about{
+	position:relative;
+	
+}
+#about::after {
+    content: "";
+    width: 24%;
+    height: 100%;
+    background-color: var(--brand);
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: -1;
+}
+.about-text h6 {
+    color: var(--brand);
+}
+.about-text p {
+    font-size: 13px;
+}
+.about-text h1 {
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+.about-text img {
+    width: unset;
+}
+
+
+
+/*---Service----*/
+#service{
+	background:var(--bg2);
+}
+.service-text {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.service-text p {
+    margin-top: 18px;
+	margin-bottom:18px;
+   
+}
+.link-set {
+    text-align: center;
+    margin-top: 50px;
+}
+a.btn.btn-brand.change {
+    margin-right: 15px;
+}
+
+
+/*--Counter-*/
+#counter{
+	background: linear-gradient(to right,rgba(27,31,52,0.8),rgba(27,31,52,0.8)),url(../img/cover_2.jpg);
+    background-size: cover;
+   background-position:center;
+  
+}
+.counter-box h1 {
+    color: var(--brand);
+}
+.counter-box {
+    text-align: center;
+}
+
+
+
+/*----Features-----*/
+.features-box {
+    display: flex;
+}
+.icon i {
+    color: var(--brand);
+    font-size: 30px;
+    margin-right: 20px;
+    line-height: 1;
+}
+.features-box p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
+/*--Team----*/
+section#team{
+	background:var(--bg2);
+}
+.team-box h4 {
+    margin-top: 25px;
+    font-size: 20px;
+}
+.team-box {
+    text-align: center;
+}
+
+.social-icons a{
+	width:48px;
+	height:48px;
+	background-color:var(--bg2);
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.social-icons a:hover{
+	background-color:var(--brand);
+	color:var(--bg2);
+}
+.team-box{
+	position:relative;
+}
+.team-box .social-icons{
+	position:absolute;
+	top:30px;
+	right:30px;
+	transition:all 0.4s ease;
+	opacity:0;
+}
+.team-box:hover .social-icons{
+	opacity:1;
+}
+
+/*--Reviews--*/
+.review-box a i {
+    font-size: 20px;
+    background-color: var(--brand);
+    color: var(--bg2);
+    border-radius: 50px;
+    padding: 3px;
+    line-height: 1;
+}
+.review-box h4 {
+    font-size: 15px;
+    margin-right: 30px;
+}
+.review-box img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+}
+.review-box p {
+    font-size: 15px;
+}
+.review-box {
+    padding: 30px 10px;
+    background: var(--bg2);
+}
+
+
+/**---Blog**/
+#blog{
+	background:var(--bg2);
+}
+.blog-box h5 {
+    margin-top: 30px;
+}
+.blog-box p {
+    font-size: 15px;
+}
+.date {
+    width: 80px;
+    height: 85px;
+    background: var(--brand);
+    text-align: center;
+}
+.date h1 {
+    color: #000;
+    font-size: 35px;
+    margin-bottom: 0;
+    padding-top: 5px;
+    /* margin-top: 10px; */
+}
+.date small {
+    color: #000;
+}
+.blog-box{
+	position:relative;
+}
+.blog-box .date{
+	position:absolute;
+	top:15px;
+	left:10px;
+}
+
+
+/*----Booking*/
+#booking{
+	background: linear-gradient(to right,rgba(27,31,52,0.8),rgba(27,31,52,0.8)),url(../img/cover_2.jpg);
+    background-size: cover;
+   background-position:center;
+}
+form.row {
+    background: var(--bg1);
+    padding: 35px;
+}
+.form-group.col-12 {
+    margin-bottom: 20px;
+}
+
+#booking form .form-control{
+	background:var(--bg2);
+	border-radius:0;
+	margin-top:12px;
+	border-color:var(--bg2);
+	border:2px solid var(--bg2);
+	color:var(--body);
+}
+#booking form input{
+	height:58px;
+}
+#booking form .form-control:focus{
+	box-shadow:none;
+	border-left-color:var(--brand);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer#footer {
+    padding: 50px 10px;
+}
+.footer-box p {
+    max-width: 320px;
+   
+}
+.social-links a i {
+   
+    border: 2px solid var(--bg2);
+    padding: 5px 5px;
+	transition:all .5s ease;
+}
+.social-links a i:hover {
+   
+    background:var(--brand);
+	color:var(--bg2);
+	border-radius:2px;
+}
+.footer-box p {
+    max-width: 330px;
+}
+.flex {
+    display: flex;
+    margin-bottom: 20px;
+    /* margin-top: 21px; */
+}
+.icon i {
+    font-size: 20px;
+    /* text-align: center; */
+}
+.flex p {
+    line-height: 1;
+    font-size: 14px;
+}
+.footer-box h3 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.footer-box h5 {
+    font-size: 15px;
+}
+p.text-align-center {
+    text-align: center;
+    margin-top: 50px;
+}
+h5.tag {
+    margin-top: 20px;
+}
+
+
+
+
+@media (max-width:800px){
+	
+	
+	.navbar-dark .navbar-toggler {
+    color: #fff;
+}
+.navbar-toggler-icon {
+    
+    width: 1.3em;
+    height: 1.3em;
+}
+.about-text p {
+    font-size: 15px;
+}
+.service-text {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.features-box {
+    display: flex;
+    text-align: center;
+}
+.icon i {
+    
+    margin-right: -210px;
+  
+}
+section#team {
+   
+    padding-top: 0;
+}
+.team-box {
+    
+    margin-top: 25px;
+    
+}
+section#review {
+    padding-top: 0;
+}
+section#blog {
+    padding-top: 0;
+}
+.blog-box {
+    
+    margin-top: 30px;
+}
+.footer-box {
+    margin-bottom: 50px;
+}
+.flex p {
+    line-height: 1;
+    font-size: 14px;
+    margin-left: 40px;
+}
+li.nav-item a {
+    margin-right: 30px;
+    float: right;
+    /* padding: 3px 4px 3px 6px; */
+}
+}
